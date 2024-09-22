@@ -72,6 +72,8 @@ func NewVerifierFromConfig(providerConfig options.Provider, p *ProviderData, cli
 			json.Unmarshal(responseBody, &providerJson)
 			pv, err := internaloidc.NewProviderVerifier(context.TODO(), verifierOptions, providerJson)
 
+			pkgutil.Logger.Info("new provider verifier start")
+
 			if err != nil {
 				pkgutil.Logger.Errorf("new provider verifier failed,%v", err)
 			}
