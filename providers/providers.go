@@ -70,6 +70,7 @@ func NewVerifierFromConfig(providerConfig options.Provider, p *ProviderData, cli
 				pkgutil.Logger.Errorf("openid-configuration http call failed, status: %d", statusCode)
 				return
 			}
+			pkgutil.Logger.Info("oidc json parse start")
 			json.Unmarshal(responseBody, &providerJson)
 			pv, err := internaloidc.NewProviderVerifier(context.TODO(), verifierOptions, providerJson)
 
