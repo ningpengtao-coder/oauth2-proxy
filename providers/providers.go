@@ -65,7 +65,7 @@ func NewVerifierFromConfig(providerConfig options.Provider, p *ProviderData, cli
 		var providerJson internaloidc.ProviderJSON
 		requestURL := strings.TrimSuffix(verifierOptions.IssuerURL, "/") + "/.well-known/openid-configuration"
 		pkgutil.Logger.Info("oidc http call start")
-		client.Get(requestURL, nil, func(statusCode int, responseHeaders http.Header, responseBody []byte) {
+		err := client.Get(requestURL, nil, func(statusCode int, responseHeaders http.Header, responseBody []byte) {
 			pkgutil.Logger.Info("oidc http call process start")
 			if statusCode != http.StatusOK {
 				pkgutil.Logger.Errorf("openid-configuration http call failed, status: %d", statusCode)
@@ -96,6 +96,10 @@ func NewVerifierFromConfig(providerConfig options.Provider, p *ProviderData, cli
 			(*p.Verifier.GetKeySet()).UpdateKeys(client, providerConfig.OIDCConfig.VerifierRequestTimeout, func(args ...interface{}) {})
 			p.StoredSession.RemoteKeySet = p.Verifier.GetKeySet()
 		}, providerConfig.OIDCConfig.VerifierRequestTimeout)
+		if err != nil {
+			pkgutil.Logger.Errorf("oidc call error,%v", err)
+			return err
+		}
 		return nil
 	}
 	errs := providerConfigInfoCheck(providerConfig, p)
