@@ -66,6 +66,7 @@ func NewVerifierFromConfig(providerConfig options.Provider, p *ProviderData, cli
 		requestURL := strings.TrimSuffix(verifierOptions.IssuerURL, "/") + "/.well-known/openid-configuration"
 		pkgutil.Logger.Info("oidc http call start")
 		client.Get(requestURL, nil, func(statusCode int, responseHeaders http.Header, responseBody []byte) {
+			pkgutil.Logger.Info("oidc http call process start")
 			if statusCode != http.StatusOK {
 				pkgutil.Logger.Errorf("openid-configuration http call failed, status: %d", statusCode)
 				return
