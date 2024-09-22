@@ -3,9 +3,9 @@ package sessions
 import (
 	"fmt"
 
-	"github.com/higress-group/oauth2-proxy/pkg/apis/options"
-	"github.com/higress-group/oauth2-proxy/pkg/apis/sessions"
-	"github.com/higress-group/oauth2-proxy/pkg/sessions/cookie"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/apis/options"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/apis/sessions"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/sessions/cookie"
 )
 
 // NewSessionStore creates a SessionStore from the provided configuration

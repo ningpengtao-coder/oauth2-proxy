@@ -3,7 +3,7 @@ package middleware
 import (
 	"net/http"
 
-	middlewareapi "github.com/higress-group/oauth2-proxy/pkg/apis/middleware"
+	middlewareapi "github.com/ningpengtao-coder/oauth2-proxy/pkg/apis/middleware"
 
 	"github.com/google/uuid"
 	"github.com/justinas/alice"

@@ -3,9 +3,9 @@ package oidc
 import (
 	"fmt"
 
-	"github.com/higress-group/oauth2-proxy/pkg/apis/options"
-	"github.com/higress-group/oauth2-proxy/pkg/mapstructure"
-	"github.com/higress-group/oauth2-proxy/pkg/validation"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/apis/options"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/mapstructure"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/validation"
 
 	"github.com/tidwall/gjson"
 )

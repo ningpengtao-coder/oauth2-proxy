@@ -7,8 +7,8 @@ import (
 
 	"encoding/json"
 
-	"github.com/higress-group/oauth2-proxy/pkg/clock"
-	"github.com/higress-group/oauth2-proxy/pkg/encryption"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/clock"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/encryption"
 )
 
 // // SessionState is used to store information about the currently authenticated user session

@@ -3,7 +3,7 @@ package validation
 import (
 	"fmt"
 
-	"github.com/higress-group/oauth2-proxy/pkg/apis/options"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/apis/options"
 )
 
 // validateProviders is the initial validation migration for multiple providrers

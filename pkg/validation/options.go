@@ -5,8 +5,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/higress-group/oauth2-proxy/pkg/apis/options"
-	"github.com/higress-group/oauth2-proxy/pkg/util"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/apis/options"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/util"
 )
 
 // Validate checks that required options are set and validates those that they

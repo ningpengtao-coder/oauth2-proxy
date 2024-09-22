@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/higress-group/oauth2-proxy/pkg/apis/sessions"
-	"github.com/higress-group/oauth2-proxy/pkg/util"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/apis/sessions"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/util"
 
 	"github.com/alibaba/higress/plugins/wasm-go/pkg/wrapper"
 )

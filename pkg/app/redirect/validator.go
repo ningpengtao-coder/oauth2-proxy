@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/higress-group/oauth2-proxy/pkg/util"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/util"
 )
 
 var (

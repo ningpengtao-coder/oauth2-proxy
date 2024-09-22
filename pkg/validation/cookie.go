@@ -6,8 +6,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/higress-group/oauth2-proxy/pkg/apis/options"
-	"github.com/higress-group/oauth2-proxy/pkg/encryption"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/apis/options"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/encryption"
 )
 
 func validateCookie(o options.Cookie) []string {

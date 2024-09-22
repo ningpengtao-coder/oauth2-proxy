@@ -8,10 +8,10 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/higress-group/oauth2-proxy/pkg/apis/options"
-	"github.com/higress-group/oauth2-proxy/pkg/apis/sessions"
-	pkgcookies "github.com/higress-group/oauth2-proxy/pkg/cookies"
-	"github.com/higress-group/oauth2-proxy/pkg/encryption"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/apis/options"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/apis/sessions"
+	pkgcookies "github.com/ningpengtao-coder/oauth2-proxy/pkg/cookies"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/encryption"
 )
 
 const (

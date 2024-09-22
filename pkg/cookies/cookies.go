@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/higress-group/oauth2-proxy/pkg/apis/options"
-	"github.com/higress-group/oauth2-proxy/pkg/util"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/apis/options"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/util"
 
-	requestutil "github.com/higress-group/oauth2-proxy/pkg/requests/util"
+	requestutil "github.com/ningpengtao-coder/oauth2-proxy/pkg/requests/util"
 )
 
 // MakeCookieFromOptions constructs a cookie based on the given *options.CookieOptions,

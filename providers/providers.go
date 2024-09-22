@@ -8,11 +8,11 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/higress-group/oauth2-proxy/pkg/apis/options"
-	"github.com/higress-group/oauth2-proxy/pkg/apis/sessions"
-	internaloidc "github.com/higress-group/oauth2-proxy/pkg/providers/oidc"
-	"github.com/higress-group/oauth2-proxy/pkg/providers/util"
-	pkgutil "github.com/higress-group/oauth2-proxy/pkg/util"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/apis/options"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/apis/sessions"
+	internaloidc "github.com/ningpengtao-coder/oauth2-proxy/pkg/providers/oidc"
+	"github.com/ningpengtao-coder/oauth2-proxy/pkg/providers/util"
+	pkgutil "github.com/ningpengtao-coder/oauth2-proxy/pkg/util"
 
 	"github.com/alibaba/higress/plugins/wasm-go/pkg/wrapper"
 )
