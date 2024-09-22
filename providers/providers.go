@@ -70,7 +70,12 @@ func NewVerifierFromConfig(providerConfig options.Provider, p *ProviderData, cli
 				return
 			}
 			json.Unmarshal(responseBody, &providerJson)
-			pv, _ := internaloidc.NewProviderVerifier(context.TODO(), verifierOptions, providerJson)
+			pv, err := internaloidc.NewProviderVerifier(context.TODO(), verifierOptions, providerJson)
+
+			if err != nil {
+				pkgutil.Logger.Errorf("new provider verifier failed,%v", err)
+			}
+
 			p.Verifier = pv.Verifier()
 			if pv.DiscoveryEnabled() {
 				// Use the discovered values rather than any specified values
